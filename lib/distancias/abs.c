@@ -1,8 +1,5 @@
 #include "distancias.h"
 
-int abs( int x ) {
-    if( x < 0 )
-		return -x;
-	else
-		return x;
+int abs(int x) {
+	return x < 0 ? -x : x;
 }
