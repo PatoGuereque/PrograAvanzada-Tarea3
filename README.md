@@ -40,7 +40,7 @@ Archivo 3:
 ```c
 // Archivo: dh.c
 
-#include “distancias.h”
+#include "distancias.h"
 
 int dh( int x1, int y1, int x2, int y2 ) {
     int r; 
@@ -52,7 +52,7 @@ int dh( int x1, int y1, int x2, int y2 ) {
 Archivo 4:
 ```c
 // Archivo: dv.c
-#include “distancias.h”
+#include "distancias.h"
 
 int dv( int x1, int y1, int x2, int y2 ) {
     int r; 
@@ -99,7 +99,7 @@ Ahora creamos dos programas que usaremos para generar dos ejecutables, uno que u
 
 ```c
 #include <stdio.h>
-#include “path donde esta la libreria” // debes poner el path hacia donde se
+#include "path donde esta la libreria" // debes poner el path hacia donde se
 //encuentran tus librerías…
 
 int main(int argc, char *argv[]) {
@@ -107,11 +107,11 @@ int main(int argc, char *argv[]) {
     int dhoriz, dvert;
             
     dlrecta = dlr( 3, 4, 10, 12 );
-    printf(“Distancia en línea recta: %d\n”, directa);
+    printf("Distancia en línea recta: %d\n", directa);
     dhoriz = dh( 3, 4, 10, 12 );
     dvert = dv( 3, 4, 10, 12 );
-    printf(“Distancia horizontal: %d\n”, dhoriz);
-    printf(“Distancia vertical: %d\n”, dvert);
+    printf("Distancia horizontal: %d\n", dhoriz);
+    printf("Distancia vertical: %d\n", dvert);
 
     return 0;
 }

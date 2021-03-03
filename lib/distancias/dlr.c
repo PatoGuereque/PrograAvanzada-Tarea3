@@ -1,4 +1,5 @@
 #include <math.h>
+#include "distancias.h"
 
 float dlr( int x1, int y1, int x2, int y2 ) {
     float r;
