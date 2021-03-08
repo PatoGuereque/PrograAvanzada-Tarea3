@@ -32,7 +32,7 @@ install:
 .PHONY: clean 
 clean:
 	for file in $(CLEANEXTS); do rm -f *.$$file; done
-	rm $(INSTALLDIR)/static/$(OUTPUTFILE).a $(INSTALLDIR)/dynamic/$(OUTPUTFILE).so 2> /dev/null
+	rm -f $(INSTALLDIR)/static/$(OUTPUTFILE).a $(INSTALLDIR)/dynamic/$(OUTPUTFILE).so
 
 # Dependencies
 abs.o: abs.c
