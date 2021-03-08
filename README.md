@@ -130,7 +130,7 @@ Ahora prueba la ejecución de cada uno de estos programas y verifica que funcion
 Ahora vamos a agregar funciones a las librerías anteriores. Se trata de las funciones que calculan las coordenadas del punto medio entre dos puntos. Una de ellas será la función ``int xpm(int x1, int y1, int x2, int y2)``, que regresa la coordenada en x del punto medio entre los puntos ``(x1,y1)`` y ``(x2,y2)``, y la otra será la función ``int ypm(int x1, int y1, int x2, int y2)``, que regresa la coordenada en y del punto medio. La siguiente figura ilustra el punto medio y la forma de obtener sus coordenadas.
  
 ### 4.1 Modificación a los archivos fuente
-Incluye aquí el contenido de los archivos ``xpm.cpp`` y ``ypm.cpp``, donde se definen las funciones ``int xpm(int x1, int y1, int x2, int y2)`` e ``int ypm(int x1, int y1, int x2, int y2)``, respectivamente.
+Incluye aquí el contenido de los archivos ``xpm.c`` y ``ypm.c``, donde se definen las funciones ``int xpm(int x1, int y1, int x2, int y2)`` e ``int ypm(int x1, int y1, int x2, int y2)``, respectivamente.
 ```c
 // Archivo xpm.c
 
@@ -148,3 +148,8 @@ Compila nuevamente tus librerías estáticas y dinámicas
 
 ### 4.8 Prueba de ejecución
 Compila y muestra la ejecución de los dos programas modificados y comenta brevemente sobre el resultado de su ejecución.
+
+
+## 5- Referencias
+
+[Building a Static Library with GNU Make](https://www.oreilly.com/library/view/c-cookbook/0596007612/ch01s17.html)
