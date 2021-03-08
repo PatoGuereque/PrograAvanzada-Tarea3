@@ -4,6 +4,31 @@
 Las bibliotecas (libraries en inglés) son conjuntos de funciones ya convertidas a código objeto y agrupadas dentro de un archivo. Pueden ser estáticas o dinámicas. En esta tarea crearás una biblioteca de funciones que calculan distancias entre dos puntos en un plano cartesiano. Agruparemos estas funciones dentro de una biblioteca estática y dentro de una biblioteca dinámica, y crearemos un par de programas, uno que usa la biblioteca estática y el otro que usa la biblioteca dinámica.
 Actividades
 
+## Compilar
+Para compilar debemos de ejecutar ``make``, eso creará dos archivos principales:
+* ``main.os`` - main output con librería estática
+* ``main.od`` - main output con librería dinámica
+
+## Correr
+
+#### Ejecutable con librerías dinámicas
+
+Para correr el ejecutable con la librería dinámica tenemos que exportar la ruta de la ubicación de la librería:
+```sh
+export LD_LIBRARY_PATH=~/Documents/PrograAvanzada/Tarea3/bin/dynamic
+```
+
+Una vez hecho esto lo podemos correr normal con ``./main.od``
+
+#### Ejecutable con librerías estáticas
+
+Para correr el ejecutable solo ponemos ``./main.os`` ya que la librería está incluida en la compilación
+
+## Limpiar
+
+Solo debemos ejecutar ``make clean`` para limpiar todo el proyecto
+
+## Instrucciones Tarea Inicio
 ## 1.- Captura y conversión a código objeto de las funciones a incluir en la biblioteca
 
 ### 1.1 Captura los siguientes archivos:
