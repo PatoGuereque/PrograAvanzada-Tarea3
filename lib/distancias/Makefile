@@ -1,5 +1,5 @@
 # Specify extensions of files to delete when cleaning
-CLEANEXTS   = o a gch
+CLEANEXTS   = o a gch so
 
 # Specify the target file and the install directory
 OUTPUTFILE  = libdistancias
@@ -32,6 +32,7 @@ install:
 .PHONY: clean 
 clean:
 	for file in $(CLEANEXTS); do rm -f *.$$file; done
+	rm $(INSTALLDIR)/static/$(OUTPUTFILE).a $(INSTALLDIR)/dynamic/$(OUTPUTFILE).so 2> /dev/null
 
 # Dependencies
 abs.o: abs.c
