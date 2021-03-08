@@ -18,7 +18,7 @@ args = -g -Wall -lm -fPIC
 all: $(OUTPUTFILE)
 
 # Build static and dynamic library
-$(OUTPUTFILE): abs.o dh.o dlr.o dv.o
+$(OUTPUTFILE): abs.o dh.o dlr.o dv.o xpm.o ypm.o
 	ar rcs $@.a $^
 	$(CC) -shared -o $@.so $^
 
@@ -39,3 +39,5 @@ abs.o: abs.c
 dh.o: dh.c distancias.h
 dlr.o: dlr.c
 dv.o: dv.c distancias.h
+xpm.o: xpm.c
+ypm.o: ypm.c
